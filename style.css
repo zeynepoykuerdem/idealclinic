@@ -1,0 +1,127 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: darkgrey;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: white;
+
+}
+
+.navbar-brand img {
+    max-height: 150px;
+    display: inline-block;
+}
+
+.navbar-brand .navbar-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: darkgrey;
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 350;
+    color: grey;
+}
+
+.navbar-nav .nav-link:hover {
+    color: lightseagreen;
+}
+
+/* Carousel styles */
+#carouselExample {
+    width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    color: black;
+    border: black;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: lightseagreen;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+/* Card section styles */
+.card-section {
+    margin-top: 50px;
+}
+
+.card-image {
+    width: 62px;
+    height: 66px;
+}
+
+.card-title {
+    font-weight: normal;
+}
+
+/* About section styles */
+.about-section {
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Services section styles */
+.services-section {
+    margin-top: 50px;
+}
+.services-section-link{
+    color: lightseagreen;
+}
+
+/* Doctors section styles */
+.doctors-section {
+    margin-top: 50px;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: darkgrey;
+}
+
+
+
+
