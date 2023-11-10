@@ -121,6 +121,19 @@ footer {
     background-color: rgba(0, 0, 0, 0.05);
     color: darkgrey;
 }
+.form-section{
+    display: flex;
+}
+.form-section.space-around{
+    justify-content: space-around;
+}
+.form-section.space-between{
+    justify-content: space-between;
+}
+.float-left-child{
+    float: left;
+    justify-content: space-evenly;
+}
 
 
 

@@ -12,33 +12,38 @@
 <!--Navbar-->
 <div id="navbar-container"></div>
 <!--Google Map-->
+<div class="container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12501.365867519173!2d27.140189!3d38.433581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd85cf0c1ce4b%3A0x8f387a42e6bef9b9!2zQcSfxLF6IHZlIERpxZ8gU2HEn2zEscSfxLEgUG9saWtsaW5pxJ9p!5e0!3m2!1str!2str!4v1699378719722!5m2!1str!2str"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12501.365867519173!2d27.140189!3d38.433581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd85cf0c1ce4b%3A0x8f387a42e6bef9b9!2zQcSfxLF6IHZlIERpxZ8gU2HEn2zEscSfxLEgUG9saWtsaW5pxJ9p!5e0!3m2!1str!2str!4v1699378719722!5m2!1str!2str"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
 <!--endGoogleMap-->
 <!--Contact Info-->
+<section class="form-section">
 <div class="container">
     <div class="row-cols-2">
         <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
+            <div class="form-row " >
+                <div class="float-left-child" >
                     <label for="inputName">Name</label>
                     <input type="text" class="form-control" id="inputName" placeholder="Name">
                 </div>
-                <div class="form-group col-md-6">
+                <div class="float-left-child" >
                     <label for="inputEmail">Email</label>
                     <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                 </div>
-                <div class="form-group col-md-6">
+                <div class="float-left-child" >
                     <label for="inputPhone">Phone</label>
-                    <input type="number" class="form-control" id="inputPhone" placeholder="Phone">
+                    <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
                 </div>
             </div>
             <div class="form-group">
-                <div class="form-group col-md-6">
+                <div class="container" size="100px">
+                <div class="form-group column-gap-md-5">
                     <label for="inputMessage">Message</label>
-                    <input type="text" class="form-control" id="inputMessage" placeholder="Message">
+                    <input type="text" class="form-control" id="inputMessage" placeholder="Message" height="200">
+                </div>
                 </div>
                 <div class="form-group col-md-6">
                     <button type="submit">Send</button>
@@ -48,6 +53,7 @@
         </form>
     </div>
 </div>
+</section>
 <!--Contact Form-->
 <!--footer-->
 <div id="footer-container"></div>
