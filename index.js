@@ -13,3 +13,13 @@ footerRequest.onload = function() {
 };
 footerRequest.open('GET', 'footer.html', true);
 footerRequest.send();
+document.addEventListener('DOMContentLoaded', function () {
+    var dropdownLink = document.getElementById('dropdownLink');
+
+    if (dropdownLink) {
+        dropdownLink.addEventListener('click', function () {
+            // Redirect to the new page
+            window.location.href = 'YourNewPage.html';
+        });
+    }
+});

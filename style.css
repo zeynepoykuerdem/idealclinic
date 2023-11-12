@@ -15,6 +15,15 @@ body {
     background-color: white;
 
 }
+.dropdown-item{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    color: darkgrey;
+}
+.dropdown-item:hover{
+    color: lightseagreen;
+}
 
 .navbar-brand img {
     max-height: 150px;
@@ -38,45 +47,40 @@ body {
 .navbar-nav .nav-link:hover {
     color: lightseagreen;
 }
-
+/*breadcrumb*/
+nav{
+    --bs-breadcrumb-divider: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E";
+}
 /* Carousel styles */
-#carouselExample {
+
+#carouselExampleControls {
+    max-height: 400px;
+}
+
+.carousel-inner img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.carousel-inner {
-    display: flex;
-}
 
-.carousel-item {
-    width: 100%;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-    color: black;
-    border: black;
-    top: 50%;
-    transform: translateY(-50%);
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    color: grey/* Invert the color of the icons */
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     color: lightseagreen;
+    background-color: rgba(0, 0, 0, 0.7); /* Darken the background on hover */
 }
 
-.carousel-control-prev {
-    left: 0;
-}
-
-.carousel-control-next {
-    right: 0;
+@media (max-width: 575.98px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
 }
 
 /* Card section styles */
@@ -96,6 +100,8 @@ body {
 /* About section styles */
 .about-section {
     margin-top: 50px;
+    background-color: whitesmoke;
+    color: darkgrey;
 }
 
 .section-title {
@@ -110,15 +116,105 @@ body {
 .services-section-link{
     color: lightseagreen;
 }
+.services-section p{
+    color: darkgrey;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.breadcrumb-item a:hover{
+    color: lightseagreen;
+    text-decoration: none;
+}
+.breadcrumb-item a{
+    color: darkgrey;
+}
+.breadcrumb-item::after{
+    content:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="8"%3E%3Cpath d="M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z" fill="%236c757d"/%3E%3C/svg%3E');
+    margin-left: 4px;
+}
+
+
 
 /* Doctors section styles */
 .doctors-section {
-    margin-top: 50px;
+    margin-top: 20px;
+    color: whitesmoke;
 }
+.doctor-title{
+    color: grey;
+    font-size: 0.9rem;
+}
+.doctor-text{
+    font-size: 0.9rem;
+    color:darkgrey ;
+}
+.card-title{
+    color: lightseagreen;
+}
+.album-container.card.btn-outline-secondary:hover{
+color: lightseagreen;
+}
+section{
+    margin-bottom: 40px;
+}
+/* style.css */
+
+/* Add your global styles here */
+
+/* Main Content Styles */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.display-3 {
+    color: lightseagreen;
+    margin-bottom: 20px;
+}
+
+img.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+
+}
+
+.row mt-5 {
+    margin-top: 30px; /* Increase the top margin for the row */
+}
+
+h5 {
+    color:lightseagreen;
+    margin-bottom: 10px/* Change the color of all h5 elements */
+}
+h2{
+    color:lightseagreen;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: darkgrey/* Adjust the line height for paragraphs */
+
+}
+
+/* Add more styles as needed */
+/*contacts*/
+.form-group button:hover{
+    color: lightseagreen;
+}
+.map-section{
+    height: 500px;
+}
+
+
+
 
 /* Footer styles */
 footer {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: whitesmoke;
     color: darkgrey;
 }
 .form-section{
@@ -134,7 +230,3 @@ footer {
     float: left;
     justify-content: space-evenly;
 }
-
-
-
-
