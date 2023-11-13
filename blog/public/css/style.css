@@ -1,0 +1,238 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: darkgrey;
+    font-family: 'Open sans',sans-serif;
+    font-size: 14px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: white;
+    font-family: 'Open sans',sans-serif;
+    font-size: 14px;
+
+}
+.dropdown-item{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: darkgrey;
+}
+.dropdown-item:hover{
+    color: lightseagreen;
+}
+
+.navbar-brand img {
+    max-height: 150px;
+    display: inline-block;
+}
+
+.navbar-brand .navbar-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: darkgrey;
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 350;
+    color: grey;
+}
+
+.navbar-nav .nav-link:hover {
+    color: lightseagreen;
+}
+
+/* Carousel styles */
+
+#carouselExampleControls {
+    max-height: 400px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    color: grey/* Invert the color of the icons */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: lightseagreen;
+    background-color: rgba(0, 0, 0, 0.7); /* Darken the background on hover */
+}
+
+@media (max-width: 575.98px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+/* Card section styles */
+.card-section {
+    margin-top: 50px;
+}
+
+.card-image {
+    width: 62px;
+    height: 66px;
+}
+
+.card-title {
+    font-weight: normal;
+}
+
+/* About section styles */
+.about-section {
+    margin-top: 50px;
+    background-color: whitesmoke;
+    color: darkgrey;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Services section styles */
+.services-section {
+    margin-top: 50px;
+}
+.services-section-link{
+    color: lightseagreen;
+}
+.services-section p{
+    color: darkgrey;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.breadcrumb-item a:hover{
+    color: lightseagreen;
+    text-decoration: none;
+}
+.breadcrumb-item a{
+    color: darkgrey;
+}
+
+
+
+/* Doctors section styles */
+.doctors-section {
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.doctor-title{
+    color: grey;
+    font-size: 0.9rem;
+}
+.doctor-text{
+    font-size: 0.9rem;
+    color:darkgrey ;
+}
+.card-title{
+    color: lightseagreen;
+}
+.album-container.card.btn-outline-secondary:hover{
+    color: lightseagreen;
+}
+section{
+    margin-bottom: 40px;
+}
+/* style.css */
+
+/* Add your global styles here */
+
+/* Main Content Styles */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.display-3 {
+    color: lightseagreen;
+    margin-bottom: 20px;
+}
+
+img.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+
+}
+
+.row mt-5 {
+    margin-top: 30px; /* Increase the top margin for the row */
+}
+
+h5 {
+    color:lightseagreen;
+    margin-bottom: 10px/* Change the color of all h5 elements */
+}
+h2{
+    color:lightseagreen;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: darkgrey/* Adjust the line height for paragraphs */
+
+}
+
+/* Add more styles as needed */
+/*contacts*/
+.form-group button:hover{
+    color: lightseagreen;
+}
+.map-section{
+    height: 500px;
+}
+.post-image-container {
+    max-height: 200px;
+    overflow: hidden;
+}
+.card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.btn-outline-secondary:hover{
+    color: lightseagreen;
+}
+/* Footer styles */
+footer {
+    background-color: whitesmoke;
+    color: darkgrey;
+}
+.form-section{
+    display: flex;
+}
+.form-section.space-around{
+    justify-content: space-around;
+}
+.form-section.space-between{
+    justify-content: space-between;
+}
+.float-left-child{
+    float: left;
+    justify-content: space-evenly;
+}
