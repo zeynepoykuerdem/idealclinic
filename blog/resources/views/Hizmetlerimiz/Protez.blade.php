@@ -3,7 +3,7 @@
     <div class="container mt-5">
         <div class="text-center">
             <div class="col-md-6 p-lg-5 mx-auto my-5">
-                <img src="{{asset('img/protetik-diş-tedavisi')}}" alt="BackgroundImage" class="img-fluid">
+                <img src="{{asset('img/protetik-diş-tedavisi.jpg')}}" alt="BackgroundImage" class="img-fluid">
                 <h1 class="display-3 fw-bold">Protetik Diş Tedavisi ( Protez )</h1>
             </div>
         </div>

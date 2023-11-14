@@ -16,8 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/blog' ,[\App\Http\Controllers\PostController::class,'index']);
-Route::get('/blog/{post}' ,[\App\Http\Controllers\PostController::class,'show'])->name('blog.show');
+
+Route::get('/blog', [\App\Http\Controllers\PostController::class,'index'])->name('blog.index');
+
+Route::get('/blog/show/{post}', [\App\Http\Controllers\PostController::class, 'show'])->name('blog.show');
+
+
 Route::get('/Anasayfa',function (){
     return view('anasayfa');
 });
