@@ -105,6 +105,7 @@ body {
     color: darkgrey;
 }
 
+
 .section-title {
     font-size: 24px;
     font-weight: bold;
@@ -218,6 +219,9 @@ p {
 .btn-outline-secondary:hover{
     color: lightseagreen;
 }
+/* Stil dosyanıza ekleyin veya inline olarak kullanabilirsiniz */
+
+
 /* Footer styles */
 footer {
     background-color: whitesmoke;

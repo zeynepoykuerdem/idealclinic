@@ -3,7 +3,7 @@
     <div class="container mt-5">
         <div class="text-center">
             <div class="col-md-6 p-lg-5 mx-auto my-5">
-                <img src="{{asset('img/ağız-diş-ve-çene-cerrahisi.jpg')}}" alt="BackgroundImage" class="img-fluid">
+                <img src="{{url('https://idealclinic.com.tr/wp-content/uploads/revslider/main-slider/dentalia-slide-bg-1.jpg')}}" alt="BackgroundImage" class="img-fluid">
                 <h1 class="display-3 fw-bold">Ağız - Diş ve Çene Cerrahisi</h1>
             </div>
         </div>

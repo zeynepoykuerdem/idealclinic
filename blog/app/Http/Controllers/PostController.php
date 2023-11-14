@@ -8,12 +8,22 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
-    public function index()
+    // livewire ekleyerek search elde et
+    //livewire da readmore butonuna tiklayarak postu gor
+    public function index(Request $request)
     {
-        $posts = Post::all();
-        return view('blog',[
-            'posts'=>$posts,
-        ]);
+        $search = $request->input('search');
+
+        $posts = Post::when($search, function ($query, $search) {
+            return $query
+                ->where('post_basligi', 'like', '%' . $search . '%')
+                ->orWhere('metin', 'like', '%' . $search . '%')
+                ->orWhereHas('tags', function ($tagQuery) use ($search) {
+                    $tagQuery->where('name', 'like', '%' . $search . '%');
+                });
+        })->paginate(5);
+
+        return view('blog', compact('posts', 'search'));
     }
 
     public function create()
@@ -24,14 +34,12 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        //store a new post
     }
 
-    public function show(Post $blogPost)
+    public function show($id)
     {
-       return view('blog.show',[
-           'post'=>$blogPost,
-       ]);
+       $post=Post::find($id);
+       return view('blog.show', compact('post'));
     }
 
 

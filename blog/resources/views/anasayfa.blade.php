@@ -73,7 +73,7 @@
                 <div class="row align-items-center">
                     <div class="col">
                         <!-- another image can be inserted here -->
-                        <img src="img/diş-kliniği.png" alt="Dental Clinic" class="img-fluid"/>
+                        <img src="img/diş-kliniği.png" alt="Dental Clinic" class="rounded-circle " />
                     </div>
                     <div class="col">
                         <h2>Hakkımızda</h2>
