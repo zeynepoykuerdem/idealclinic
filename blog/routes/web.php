@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('anasayfa');
 });
 
 Route::get('/blog', [\App\Http\Controllers\PostController::class,'index'])->name('blog.index');
@@ -45,3 +45,7 @@ Route::get('/search', 'SearchController@index');
 Route::post('/search', 'SearchController@search');
 
 
+
+Route::fallback(function() {
+    return view('anasayfa');
+});

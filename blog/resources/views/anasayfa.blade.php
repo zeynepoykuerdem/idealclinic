@@ -1,6 +1,69 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container-lg ">
+
+<x-carousel />
+
+
+<?php
+$items = [
+    [
+        'title'=>'UZMAN HEKİMLER',
+        'text'=>'Alanında uzman hekimlerimiz ile güvenilir tedavi',
+        'img'=>asset('img/icons/icon1.png'),
+    ],
+    [
+        'title'=>'ÜST KALİTE EKİPMAN',
+        'text'=>'Son tedavi teknolojileriyle kaliteli hizmet',
+        'img'=>asset('img/icons/icon2.png'),
+    ],
+    [
+        'title'=>'KONFORLU TEDAVİ',
+        'text'=>'Arkanıza yaslanın ve ağız sağlığınızı hekimlerimize bırakın',
+        'img'=>asset('img/icons/icon3.png'),
+    ],
+    [
+        'title'=>'GÜLERYÜZLÜ HİZMET',
+        'text'=>'Tedavinizden mutlu ayrılın',
+        'img'=>asset('img/icons/icon4.png'),
+    ],
+];
+?>
+<div class="container my-4 py-4">
+    <div class="row row-cols-2 row-cols-lg-4 g-4">
+        @foreach ($items as $item)
+        <div class="text-center">
+            <img src="{{$item['img']}}" width="62" height="66" />
+            <br />
+            <br />
+            <h4>{{$item['title']}}</h4>
+            {!! $item['text'] !!}
+        </div>
+        @endforeach
+    </div>
+</div>
+
+<div class="bg-light py-4">
+    <div class="container my-4 py-4">
+        <h3 class="text-center">HAKKIMIZDA</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+            <div>
+                <img src="{{asset('img/hakkimizda_icon.jpg')}}" class="img-fluid float-end" />
+            </div>
+            <div class="lead my-auto lh-lg">
+                İdeal Ağız ve Diş Sağlığı polikliniği 1996 yılında, dönemin Cumhurbaşkanı Süleyman Demirel tarafından açılmıştır.
+                Koşulsuz hasta memnuniyetinin temel ilke olarak ele alındığı İdeal Diş Kliniği, deneyimli kadrosu ile hastalarına
+                huzurlu ve rahat bir ortam sunar.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<x-doctors />
+
+
+
+    <div class="container-lg  d-none">
         <div id="carouselExampleControls" class="carousel slide my-4 " data-bs-ride="true">
             <div class="carousel-inner">
                 <div class="carousel-item active">
