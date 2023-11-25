@@ -1,17 +1,22 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container">
-        <h1>{{ $post->post_basligi }}</h1>
-        <p>{{ $post->metin }}</p>
-        <img src="{{$post->post_foto}}" class="card-img-top" alt="{{ $post->title }}">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="mb-4">{{ $post->post_basligi }}</h1>
+                <img src="{{ $post->post_foto }}" class="img-fluid mb-4" alt="{{ $post->title }}">
+                <p class="lead" style="font-size: 16px">{{ $post->metin }}</p>
+                <h4 class="mt-4">Tags:</h4>
+                <ul class="list-inline">
+                    @foreach ($post->tags as $tag)
+                        <li class="list-inline-item">{{ $tag->name }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
 
-        <h4>Tags:</h4>
-        <ul>
-            @foreach ($post->tags as $tag)
-                <li>{{ $tag->name }}</li>
-            @endforeach
-        </ul>
+
     </div>
-
 @endsection
+
 

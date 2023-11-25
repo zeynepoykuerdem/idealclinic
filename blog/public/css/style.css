@@ -140,6 +140,18 @@ body {
     margin-top: 20px;
     color: whitesmoke;
 }
+ .doctor_thumbnail img {
+     transform:scale(.95);
+     opacity:.9;
+     transition:all .2s;
+ }
+.doctor_thumbnail:hover img {
+    transform:scale(1);
+    opacity:1;
+    transition:all .2s;
+    border:1px solid black;
+}
+
 .doctor-title{
     color: grey;
     font-size: 0.9rem;

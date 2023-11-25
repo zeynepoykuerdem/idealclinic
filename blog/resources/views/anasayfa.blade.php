@@ -249,58 +249,6 @@ $items = [
             </div>
         </section>
         <!--hizmetler kismindaki gibi doktorlari ekle-->
-        <section class="doctors-section bg-light py-5">
 
-            <div class="container text-center">
-                <div class="row justify-content-center">
-
-                    <div class="col-lg-3 mb-4">
-                        <div class="card border-0 h-100">
-                            <img src="img/Dr.-Esra-Zeyrek-4.jpg" class="card-img-top rounded-circle" alt="Esra Zeyrek">
-                            <div class="card-body text-center">
-                                <p class="doctor-title">Ağız Diş ve Çene Protezleri Uzmanı</p>
-                                <h5 class="card-title">Dr. Esra Zeyrek</h5>
-                                <p class="doctor-text">Laboratuvar Sorumlusu</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mb-4">
-                        <div class="card border-0 h-100">
-                            <img src="img/Dt.-İdiz-Hacımüezzin-Kubalı-1.png" class="card-img-top rounded-circle"
-                                 alt="Sunset Over the Sea">
-                            <div class="card-body text-center">
-                                <p class="doctor-title">Diş Hekimi</p>
-                                <h5 class="card-title">Dt. İdiz Hacımüezzin Kubalı</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mb-4">
-                        <div class="card border-0 h-100">
-                            <img src="img/Dr.-Sinan-Çetindağ-1.jpg" class="card-img-top rounded-circle"
-                                 alt="Sunset Over the Sea">
-                            <div class="card-body text-center">
-                                <p class="doctor-title">Ortodonti Uzmanı</p>
-                                <h5 class="card-title">Dr. Sinan Çetindağ</h5>
-                                <p class="doctor-text">Klinik Direktörü</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 mb-4">
-                        <div class="card border-0 h-100 ">
-                            <img src="img/Dr.-Nil-Serter.png" class="card-img-top rounded-circle"
-                                 alt="Sunset Over the Sea">
-                            <div class="card-body text-center">
-                                <p class="doctor-title">Periodontoloji Doktoru</p>
-                                <h5 class="card-title">Dr. Nil Serter</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
     </div>
 @endsection

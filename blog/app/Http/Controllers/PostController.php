@@ -5,14 +5,18 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
+use Livewire\WithPagination;
 
 class PostController extends Controller
 {
+    use WithPagination;
+    public $page=5;
     // livewire ekleyerek search elde et
     //livewire da readmore butonuna tiklayarak postu gor
     public function index(Request $request)
     {
         $search = $request->input('search');
+
 
         $posts = Post::when($search, function ($query, $search) {
             return $query
@@ -20,8 +24,11 @@ class PostController extends Controller
                 ->orWhere('metin', 'like', '%' . $search . '%')
                 ->orWhereHas('tags', function ($tagQuery) use ($search) {
                     $tagQuery->where('name', 'like', '%' . $search . '%');
+
                 });
-        })->paginate(5);
+
+
+        })->paginate(10);
 
         return view('blog', compact('posts', 'search'));
     }

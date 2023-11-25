@@ -8241,7 +8241,9 @@ textarea.form-control-lg {
 .gap-5 {
   gap: 3rem !important;
 }
-
+.row-spacing{
+    margin-bottom: 20px;
+}
 .row-gap-0 {
   row-gap: 0 !important;
 }

@@ -5,11 +5,11 @@ $menu = [
         'title'=>'ANA SAYFA',
     ],
     [
-        'url'=>'hekimlerimiz',
+        'url'=>'Hekimlerimiz',
         'title'=>'HEKİMLERİMİZ',
     ],
     [
-        'url'=>'hizmetlerimiz',
+        'url'=>'Hizmetlerimiz',
         'title'=>'HİZMETLERİMİZ',
     ],
     [
@@ -17,7 +17,7 @@ $menu = [
         'title'=>'BLOG',
     ],
     [
-        'url'=>'iletisim',
+        'url'=>'İletişim',
         'title'=>'İLETİŞİM',
     ],
 ];
@@ -39,7 +39,7 @@ $menu = [
                     <ul class="navbar-nav ms-auto nav-underline small">
                         @foreach ($menu as $m)
                         <li class="nav-item">
-                            <a class="nav-link  {{(request()->segment(1) == $m['url'])?'active':''}}" 
+                            <a class="nav-link  {{(request()->segment(1) == $m['url'])?'active':''}}"
                                 aria-current="page"
                                 href="{{url($m['url'])}}">{{$m['title']}}</a>
                         </li>
