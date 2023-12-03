@@ -24,24 +24,25 @@ Route::get('/blog/show/{post}', [\App\Http\Controllers\PostController::class, 's
 Route::get('/Hizmetlerimiz',function (){
     return view('hizmetlerimiz');
 });
-Route::get('/İletişim',function (){
-    return view('iletişim');
-});
 Route::get('/Hekimlerimiz',function (){
     return view('hekimlerimiz');
 });
-Route::view('/Ağız-Diş ve Çene Cerrahisi', 'Hizmetlerimiz/AğızDişÇeneC')->name('service.AğızDişÇeneC');
-Route::view('/Eklem Rahatsızlıkları', 'Hizmetlerimiz/EklemRahatsızlıkları')->name('service.EklemRahatsızlıkları');
-Route::view('/Endodenti', 'Hizmetlerimiz/Endodenti')->name('service.endo');
-Route::view('/Estetik Diş Hekimliği', 'Hizmetlerimiz/EstetikDişH')->name('service.est');
-Route::view('/Genel Anestezi Uygulamaları', 'Hizmetlerimiz/GenelAnesteziU')->name('service.gau');
-Route::view('/Ortodonti', 'Hizmetlerimiz/Ortodonti')->name('service.ort');
-Route::view('/Pedodonti', 'Hizmetlerimiz/Pedodonti')->name('service.pedo');
-Route::view('/Periodontoloji', 'Hizmetlerimiz/Periodontoloji')->name('service.perio');
-Route::view('/Protetik Diş Tedavisi (Protez)', 'Hizmetlerimiz/Protez')->name('service.protez');
+
+Route::view('/Ağız-Diş ve Çene Cerrahisi', 'Hizmetlerimiz/AğızDişÇeneC');
+Route::view('/Eklem Rahatsızlıkları', 'Hizmetlerimiz/EklemRahatsızlıkları');
+Route::view('/Endodenti', 'Hizmetlerimiz/Endodenti');
+Route::view('/Estetik Diş Hekimliği', 'Hizmetlerimiz/EstetikDişH');
+Route::view('/Genel Anestezi Uygulamaları', 'Hizmetlerimiz/GenelAnesteziU');
+Route::view('/Ortodonti', 'Hizmetlerimiz/Ortodonti');
+Route::view('/Pedodonti', 'Hizmetlerimiz/Pedodonti');
+Route::view('/Periodontoloji', 'Hizmetlerimiz/Periodontoloji');
+Route::view('/Protetik Diş Tedavisi (Protez)', 'Hizmetlerimiz/Protez');
 
 Route::get('/search', 'SearchController@index');
 Route::post('/search', 'SearchController@search');
+
+Route::get('/iletişim',[\App\Http\Controllers\ContactUsFormController::class,'createForm']);
+Route::post('/iletişim',[\App\Http\Controllers\ContactUsFormController::class,'storeForm'])->name('contact.store');
 
 
 
